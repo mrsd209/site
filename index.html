@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أسماء في السماء</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1a35;--deep:#16254a;--sand:#efe6d2;--brass:#d2a84c;--mist:#9fb2d8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--sand);font:400 1.05rem/1.9 Tajawal,sans-serif;color-scheme:dark}
+h1,h2,h3{font-family:Amiri,serif;font-weight:700;margin:0;line-height:1.3}
+.wrap{max-width:960px;margin:auto;padding:0 1.25rem}
+header{padding:3rem 0 1rem;text-align:right}
+h1{font-size:clamp(2.6rem,9vw,5rem)}
+header p{max-width:34em;color:var(--mist);margin:.75rem 0 0}
+.sky{display:grid;gap:1.5rem;grid-template-columns:1fr;align-items:center;margin:1.5rem 0 3rem}
+@media(min-width:760px){.sky{grid-template-columns:1fr 1fr}}
+svg{width:100%;max-height:70vh;background:radial-gradient(circle at 50% 40%,var(--deep),var(--ink) 75%);border-radius:1rem}
+.ln{stroke:var(--mist);stroke-opacity:.35;stroke-width:1}
+.st{cursor:pointer;outline:none}
+.st circle.core{fill:var(--sand)}
+.st circle.halo{fill:var(--brass);opacity:0;transition:opacity .2s}
+.st:hover .halo,.st:focus .halo,.st.on .halo{opacity:.35}
+.dim{fill:var(--mist);opacity:.6}
+#card{border-inline-start:3px solid var(--brass);padding:.25rem 1.25rem}
+#card h2{font-size:3rem;color:var(--brass)}
+#card .en{direction:ltr;text-align:right;color:var(--mist);font-style:italic;margin:0}
+#card p{margin:.75rem 0 0}
+h2.sec{font-size:2rem;margin-bottom:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem;margin-bottom:3rem}
+.item{background:var(--deep);padding:1rem 1.25rem;border-radius:.75rem}
+.item h3{font-size:1.7rem;color:var(--sand)}
+.item small{display:block;direction:ltr;text-align:right;color:var(--brass)}
+.item p{margin:.4rem 0 0;font-size:.95rem;color:var(--mist);line-height:1.7}
+footer{padding:2rem 0 3rem;color:var(--mist);font-size:.9rem;border-top:1px solid var(--deep)}
+.st:focus-visible circle.halo{opacity:.6}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>أسماء في السماء</h1>
+<p>أكثر من مئتي نجم يحمل اليوم اسمًا عربيًا. ترجم الفلكيون العرب كتب الإغريق وأعادوا تسمية النجوم بما رأوه في الأشكال: يدٌ ورجلٌ وسيفٌ ونطاق.</p>
+</header>
+
+<section class="sky">
+<svg viewBox="0 0 300 360" role="img" aria-label="كوكبة الجبار، اضغط على نجم لمعرفة اسمه">
+<g class="ln"><line x1="80" y1="70" x2="115" y2="190"/><line x1="225" y1="80" x2="185" y2="170"/><line x1="115" y1="190" x2="95" y2="300"/><line x1="185" y1="170" x2="215" y2="290"/><line x1="115" y1="190" x2="185" y2="170"/><line x1="80" y1="70" x2="225" y2="80"/></g>
+<circle class="dim" cx="225" cy="80" r="3.5"/>
+<circle class="dim" cx="40" cy="330" r="1.5"/><circle class="dim" cx="260" cy="200" r="1.5"/><circle class="dim" cx="30" cy="150" r="1.2"/><circle class="dim" cx="270" cy="330" r="1.2"/><circle class="dim" cx="150" cy="30" r="1.5"/>
+<g id="stars"></g>
+</svg>
+<div id="card" aria-live="polite">
+<h2>اختر نجمًا</h2>
+<p class="en">كوكبة الجبار (Orion)</p>
+<p>اضغط على أحد النجوم المضيئة لتعرف أصل اسمه العربي.</p>
+</div>
+</section>
+
+<h2 class="sec">نجوم أخرى بأسماء عربية</h2>
+<section class="grid">
+<div class="item"><h3>الدبران</h3><small>Aldebaran</small><p>من «الدابر»، أي التابع، لأنه يتبع الثريا في سيره.</p></div>
+<div class="item"><h3>النسر الطائر</h3><small>Altair</small><p>اشتُق اسمه من «الطائر»، وهو أحد نجوم صيف الشمال اللامعة.</p></div>
+<div class="item"><h3>النسر الواقع</h3><small>Vega</small><p>من «الواقع»، أي النسر الذي ضمّ جناحيه.</p></div>
+<div class="item"><h3>ذنب الدجاجة</h3><small>Deneb</small><p>«ذنب» أي ذيل، وهو الطرف الأخير في كوكبة الدجاجة.</p></div>
+<div class="item"><h3>فم الحوت</h3><small>Fomalhaut</small><p>يقع عند فم الحوت الجنوبي، ومنه جاء اسمه حرفيًا.</p></div>
+<div class="item"><h3>الغول</h3><small>Algol</small><p>نجم يخفت ويسطع بانتظام، فسمّوه باسم الكائن المخيف.</p></div>
+</section>
+<footer>الأسماء في الجدول تقريبية في النطق اللاتيني، وقد تتعدد أصولها بين المصادر.</footer>
+</div>
+
+<script>
+var S=[
+{x:80,y:70,r:7,ar:"يد الجوزاء",en:"Betelgeuse",t:"من «يد الجوزاء»، وهي اليد اليمنى للجبار. نجم أحمر عملاق يُعدّ من أكبر النجوم المرئية."},
+{x:215,y:290,r:8,ar:"رجل الجبار",en:"Rigel",t:"من «رِجل الجبار»، وهي قدمه اليسرى. نجم أزرق شديد السطوع وهو أضوء نجوم الكوكبة."},
+{x:95,y:300,r:5,ar:"سيف الجبار",en:"Saiph",t:"من «سيف الجبار»، ويقع عند الركبة اليمنى في تصوير الكوكبة."},
+{x:115,y:190,r:5,ar:"النطاق",en:"Alnitak",t:"من «النِّطاق»، أي الحزام. أول نجوم حزام الجبار الثلاثة."},
+{x:150,y:180,r:5.5,ar:"النظام",en:"Alnilam",t:"من «النظام»، أي سلك اللؤلؤ المنظوم. نجم الوسط في الحزام."},
+{x:185,y:170,r:4.5,ar:"المِنطقة",en:"Mintaka",t:"من «المِنطقة»، أي الحزام أيضًا. يقع على خط الاستواء السماوي تقريبًا."}];
+var g=document.getElementById('stars'),ns='http://www.w3.org/2000/svg',card=document.getElementById('card'),cur=null;
+S.forEach(function(s){
+var e=document.createElementNS(ns,'g');e.setAttribute('class','st');e.setAttribute('tabindex','0');e.setAttribute('role','button');e.setAttribute('aria-label',s.ar);
+e.innerHTML='<circle class="halo" cx="'+s.x+'" cy="'+s.y+'" r="'+(s.r*3)+'"/><circle class="core" cx="'+s.x+'" cy="'+s.y+'" r="'+s.r+'"/><circle cx="'+s.x+'" cy="'+s.y+'" r="'+(s.r*3)+'" fill="transparent"/>';
+function pick(){if(cur)cur.classList.remove('on');e.classList.add('on');cur=e;
+card.innerHTML='<h2>'+s.ar+'</h2><p class="en">'+s.en+'</p><p>'+s.t+'</p>';}
+e.addEventListener('click',pick);
+e.addEventListener('keydown',function(k){if(k.key==='Enter'||k.key===' '){k.preventDefault();pick();}});
+g.appendChild(e);});
+</script>
+</body>
+</html>
